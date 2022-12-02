@@ -119,6 +119,10 @@ h6{
     text-transform: uppercase;
     font-family: var(--secondary-font);
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 p{
     font-size: 1rem;
     color:var(--text-gray);
@@ -206,6 +210,9 @@ p{
 }
 .about-right .about-info{
     padding: 20px 5px;
+}
+.dentist .card {
+    padding: 60px 20px;
 }
 .Service .card p{
     color: var(--text-black);
