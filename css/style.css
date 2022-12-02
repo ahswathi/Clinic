@@ -207,6 +207,9 @@ p{
 .about-right .about-info{
     padding: 20px 5px;
 }
+.Service .card p{
+    color: var(--text-black);
+}
 .services_wrapper{
     background-color: var(--primary-color);
     display: flex;
