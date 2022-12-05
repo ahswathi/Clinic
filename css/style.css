@@ -260,9 +260,9 @@ p{
 .dentist .card:hover{
     padding: 60px 20px;
 }
-.Service .card p{
+.Service .card:hover{
     -webkit-transform:translateY(-0.625rem);
-    transform:translateY(-0.625rem);
+    transform:translateY(-1.025rem);
 }
 .services_wrapper{
     background-color: var(--primary-color);
@@ -432,6 +432,17 @@ p{
         color:var(--text-black);
         font-family: var(--secondary-font);
     }
+    .banner .animate{
+        transform:translateX(-62.5%);
+        top: 160px;
+        left: 62.5%;
+    }
+    .banner .animate .image1{
+        left: -180px;
+    }
+    .banner .animate .image2{
+        left: -40px;
+    }
     .services_wrapper .card{
         background-color: transparent;
         border:.0625rem solid var(--bg-light-blue);
@@ -462,6 +473,18 @@ p{
     }
     .about .img-about {
         left: 0px;
+    }
+        
+    .banner .animate{
+        transform:translateX(-62.5%);
+        top: 80px;
+        left: 62.5%;
+    }
+    .banner .animate .image1{
+        left: -180px;
+    }
+    .banner .animate .image2{
+        left: -40px;
     }
     .footer input{
         margin-bottom: 6px;
