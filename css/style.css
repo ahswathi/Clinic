@@ -75,7 +75,23 @@ ul {
 .card{
     padding: 80px 60px;
     box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
-    border: transparent;
+    transition:all .4s;
+    border:0;
+}
+
+@keyframes movebounce{
+    0%{
+        -webkit-transform:translateY(0);
+        transform:translateY(0);
+    }
+    50%{
+        -webkit-transform:translateY(1.25rem);
+        transform:translateY(1.25rem);
+    }
+    100%{
+        -webkit-transform:translateY(0);
+        transform:translateY(0);
+    }
 }
 h1{
     font-size: 3.875rem;
@@ -181,6 +197,30 @@ p{
 }
 .banner .animate{
     position:absolute;
+    transform:translateX(-62.5%);
+    bottom: 0;
+    top: 160px;
+    left: 62.5%;
+}
+.banner .animate .image1{
+    position:absolute;
+    left: -280px;
+    animation-name:movebounce;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+.banner .animate .image2{
+    position:absolute;
+    left: -80px;
+    animation-name:movebounce;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-direction: alternate;
 }
 .banner p{
     color:var(--text-white)
@@ -200,10 +240,13 @@ p{
 .about p{
     color: var(--text-black)
 }
-
+.about  .img-about{
+    position:absolute;
+    animation:movebounce 3s linear infinite;
+}
 .about-right {
    /*  position: relative; */
-   flex-direction: row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width:80%;
@@ -214,8 +257,12 @@ p{
 .dentist .card {
     padding: 60px 20px;
 }
+.dentist .card:hover{
+    padding: 60px 20px;
+}
 .Service .card p{
-    color: var(--text-black);
+    -webkit-transform:translateY(-0.625rem);
+    transform:translateY(-0.625rem);
 }
 .services_wrapper{
     background-color: var(--primary-color);
@@ -226,6 +273,11 @@ p{
     border:.0625rem solid var(--bg-light-blue);
     border-radius: .625rem;
     padding: 40px 50px;
+}
+
+.services_wrapper .card:hover{  
+    cursor:cell;
+    border-color:transparent;
 }
 .services_wrapper h4, p{
     color: var(--text-white);
