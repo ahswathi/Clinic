@@ -264,6 +264,9 @@ p{
     -webkit-transform:translateY(-0.625rem);
     transform:translateY(-1.025rem);
 }
+.Service p{
+    color: var(--text-black);
+}
 .services_wrapper{
     background-color: var(--primary-color);
     display: flex;
